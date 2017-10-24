@@ -8,12 +8,11 @@
       {% endif %}
       <blockquote>{{ greeting.content|escape }}</blockquote>
     {% endfor %}
-    <img src="https://youtube.com/favicon.ico"/>
+    <img src="{{url}}"/>
     <form action="/sign" method="post">
       <div><textarea name="content" rows="3" cols="60"></textarea></div>
       <!--<div><input type="submit" value="Sign Guestbook"></div>-->
     </form>
 
-    <a href="{{ url }}">{{ url_linktext }}</a>
   </body>
 </html>
